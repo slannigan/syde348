@@ -26,5 +26,31 @@ $(document).ready(function() {
 	///////////////////////////////
 	//       CALIBRATION         //
 	///////////////////////////////
+	$('.calib1 .next').click(function() {
+		$('.calib1').toggleClass('hidden');
+		$(".calib2").toggleClass("hidden");
+	});
+	$(".calib2 .back").click(function() {
+		$(".calib1").toggleClass("hidden");
+		$(".calib2").toggleClass("hidden");
+	});
+
+	$(".calib2 .next").click(function() {
+		$(".calib2").toggleClass("hidden");
+		$(".calib3").toggleClass('hidden');
+	});
+	$(".calib3.back").click(function() {
+		$(".calib2").toggleClass('hidden');
+		$(".calib3").toggleClass('hidden');
+	})
+
+	$(".calib3 .next").click(function() {
+		$(".calib3").toggleClass("hidden");
+		$(".calib4").toggleClass('hidden');
+	});
+	$(".calib4.back").click(function() {
+		$(".calib3").toggleClass('hidden');
+		$(".calib4").toggleClass('hidden');
+	})
 
 });
