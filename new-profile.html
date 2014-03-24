@@ -2,23 +2,49 @@
 
 <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
+<script src="jquery-1.11.0.js"></script>
+<script src="scripts.js"></script>
 </head>
 
 <body>
 
 <div id="main" class="profile">
 
-<p class="title"> Profile Setup </p>
 
-<p class="inline">Name:</p> <input class="inline" type="text">
+<p class="title"> Profile Setup </p> <br>
 
-<br>
+<div class="content ask-name">
 
-<div class="button nav back"> 
-	<a href="index.html">< Back </a>
+	<p> Hello! What is your name? </p>
+
+	<p class="inline">Name:</p> <input class="inline" type="text" id="given-name">
+
+	<br>
+
+	<p class="error hidden"> Please enter a name! </p>
+
+	<div class="button nav back"> 
+		<a href="index.html">< Back </a>
+	</div>
+	<div class="button nav next"> 
+		Next > 
+	</div>
 </div>
-<div class="button nav next"> 
-	Calibrate > 
+
+<div class="content confirm-name hidden">
+
+	<p> <span id="place-name-here">John</span>, what a nice name! </p>
+
+	<p> Now let's set up this game just for you! </p>
+
+	<br>
+
+	<div class="button nav back"> 
+		< That's not my name!
+	</div>
+	<div class="button nav next"> 
+		<a href="calibrate.html"> Next > </a>
+	</div>
 </div>
 
 
