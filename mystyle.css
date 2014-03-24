@@ -1,0 +1,62 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	width: 800px;
+	height: 500px;
+	border: 1px solid #000;
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	position: relative;
+}
+
+.title {
+	font-size: 50px;
+	margin-top: 50px;
+}
+.startup .title {
+	margin-top: 150px;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.button {
+	display: inline-block;
+	padding: 5px 15px;
+	border: 1px solid #000;
+	margin: 1px;
+	margin-bottom: 16px;
+}
+
+.button a {
+	color: #000;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.button.selected {
+	background-color: #eee;
+	border: 2px solid #000;
+	margin: 0px;
+	margin-bottom: 15px;
+}
+
+.button.nav {
+	position: absolute;
+	bottom: 30px;
+}
+.back {
+	left: 50px;
+}
+.next {
+	right: 50px;
+}
