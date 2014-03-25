@@ -1,0 +1,108 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	width: 800px;
+	height: 500px;
+	border: 1px solid #000;
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	position: relative;
+}
+
+.hidden {
+	display: none;
+}
+
+.main-title {
+	font-size: 50px;
+	margin-top: 150px;
+}
+.title {
+	font-size: 40px;
+	margin: 20px 0 0 40px;
+	width: 100%;
+	text-align: left;
+	float: left;
+}
+.startup .title {
+	margin-top: 150px;
+}
+
+.inline {
+	display: inline-block;
+}
+.align.left {
+	width: 200px;
+	display: inline-block;
+	text-align: right;
+}
+
+.ask-name.content,
+.confirm-name.content {
+	margin-top: 100px;
+}
+
+.calib .content {
+	margin-top: 70px;
+}
+.calib img {
+	width: 300px;
+}
+.content.calib4 {
+	margin-top: 150px;
+}
+.settings .content {
+	text-align: left;
+}
+
+.content.settings {
+	float: left;
+}
+
+.error {
+	color: #f00;
+}
+
+.button {
+	display: inline-block;
+	padding: 5px 15px;
+	border: 1px solid #000;
+	margin: 1px;
+	margin-bottom: 16px;
+}
+
+.startup .button {
+	width: 100px;
+}
+
+.button a {
+	color: #000;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.button.selected {
+	background-color: #ccc;
+	border: 2px solid #000;
+	margin: 0px;
+	margin-bottom: 15px;
+}
+
+.button.nav {
+	position: absolute;
+	bottom: 30px;
+}
+.back {
+	left: 50px;
+}
+.next {
+	right: 50px;
+}
