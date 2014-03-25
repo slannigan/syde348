@@ -4,11 +4,25 @@ function updateProgress(newValue) {
 }
 
 function getRandomX() {
-    return Math.random() * 500;
+    var numX = Math.floor(Math.random() * 6) + 1;
+    if (numX <= 2) {
+        return 10;
+    } else if ((num <= 4) && (numX > 2)) {
+        return 50;
+    } else {
+        return 100;
+    }
 }
 
 function getRandomY() {
-    return Math.random() * 250;
+    var numY = Math.floor(Math.random() * 6) + 1;
+    if (numY <= 2) {
+        return 10;
+    } else if ((numY <= 4) && (numY > 2)) {
+        return 50;
+    } else {
+        return 100;
+    }
 }
 
 function init() {
@@ -33,10 +47,11 @@ function init() {
     mouse.on('dragmove', function() {
         if (areTheyColliding(mouse, target)) {
             // box touched the goal
-            //mouse.setX(100);
-            //mouse.setY(50);
+            mouse.setX(100);
+            mouse.setY(10);
             //alert("You Win!");       
             updateProgress(0.5);
+            setTimeout(function() {}, 2000);
         }
     });
 
