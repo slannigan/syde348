@@ -35,6 +35,11 @@ body {
 .inline {
 	display: inline-block;
 }
+.align.left {
+	width: 200px;
+	display: inline-block;
+	text-align: right;
+}
 
 .ask-name.content,
 .confirm-name.content {
@@ -44,8 +49,18 @@ body {
 .calib .content {
 	margin-top: 70px;
 }
+.calib img {
+	width: 300px;
+}
 .content.calib4 {
 	margin-top: 150px;
+}
+.settings .content {
+	text-align: left;
+}
+
+.content.settings {
+	float: left;
 }
 
 .error {
@@ -75,7 +90,7 @@ body {
 }
 
 .button.selected {
-	background-color: #eee;
+	background-color: #ccc;
 	border: 2px solid #000;
 	margin: 0px;
 	margin-bottom: 15px;

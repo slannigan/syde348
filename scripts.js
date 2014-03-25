@@ -53,4 +53,28 @@ $(document).ready(function() {
 		$(".calib4").toggleClass('hidden');
 	})
 
+	///////////////////////////////
+	//       SETTINGS            //
+	///////////////////////////////
+	$(".button.angle").click(function() {
+		$(".button.angle").removeClass("selected");
+		$(this).addClass("selected");
+	});
+
+	$(".button.hand").click(function() {
+		$(".button.hand").removeClass("selected");
+		$(this).addClass("selected");
+	});
+
+	$(".button.hold").click(function() {
+		$(".button.hold").removeClass("selected");
+		$(this).addClass("selected");
+	});
+
+	$(".button.animal").click(function() {
+		$(".button.animal").removeClass("selected");
+		$(this).addClass("selected");
+	});
+
+
 });
