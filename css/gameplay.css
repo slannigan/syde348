@@ -1,0 +1,44 @@
+progress{
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      margin: 0;
+      z-index: 999;
+}
+button{
+  background: #fff;
+  border: 1px solid #575757;
+  outline: none;
+}
+#pauseBtn{
+  margin: 5px 0 0 0;
+  float: right;
+  height: 30px;
+  width: 90px; 
+}
+.gameplay{
+  padding: 25px;
+}
+progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #09c, #f1da36);
+-webkit-animation: animate-stripes 5s linear infinite;
+        animation: animate-stripes 5s linear infinite;
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+@-webkit-keyframes animate-stripes {
+   100% { background-position: -100px 0px; }
+}
+
+@keyframes animate-stripes {
+   100% { background-position: -100px 0px; }
+}
+
+
