@@ -29,10 +29,15 @@ body {
 	margin: 20px 0 0 40px;
 	width: 100%;
 	text-align: left;
-	float: left;
 }
 .startup .title {
 	margin-top: 150px;
+}
+.reward .title {
+	margin: 80px 0 30px 320px;
+}
+p.score {
+	font-size: 30px;
 }
 
 .inline {
@@ -50,7 +55,7 @@ body {
 }
 
 .calib .content {
-	margin-top: 70px;
+	margin-top: 20px;
 }
 .calib img {
 	width: 300px;

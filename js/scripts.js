@@ -39,7 +39,7 @@ $(document).ready(function() {
 		$(".calib2").toggleClass("hidden");
 		$(".calib3").toggleClass('hidden');
 	});
-	$(".calib3.back").click(function() {
+	$(".calib3 .back").click(function() {
 		$(".calib2").toggleClass('hidden');
 		$(".calib3").toggleClass('hidden');
 	})
@@ -48,7 +48,7 @@ $(document).ready(function() {
 		$(".calib3").toggleClass("hidden");
 		$(".calib4").toggleClass('hidden');
 	});
-	$(".calib4.back").click(function() {
+	$(".calib4 .back").click(function() {
 		$(".calib3").toggleClass('hidden');
 		$(".calib4").toggleClass('hidden');
 	})
