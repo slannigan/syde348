@@ -77,4 +77,16 @@ $(document).ready(function() {
 	});
 
 
+	///////////////////////////////
+	//       GAME SELECT         //
+	///////////////////////////////
+	$(".level").click(function() {
+		$(".level").removeClass("selected");
+		$(this).addClass("selected");
+	});
+	$(".level").hover(function() {
+		$(this).children(".title").toggleClass("hidden");
+		$(this).children(".desc").toggleClass("hidden");
+	});
+
 });

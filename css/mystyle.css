@@ -30,6 +30,11 @@ body {
 	width: 100%;
 	text-align: left;
 }
+.level .title {
+	font-size: 20px;
+	text-align: center;
+	margin: 20px 0 0 0;
+}
 .startup .title {
 	margin-top: 150px;
 }
@@ -69,6 +74,38 @@ p.score {
 
 .content.settings {
 	float: left;
+}
+
+.left-col {
+	width: 150px;
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: left;
+	display: inline-block;
+	float: left;
+}
+
+.level {
+	border: 1px solid #000;
+	display: inline-block;
+	width: 130px;
+	height: 100px;
+	float: left;
+	margin: 8px;
+	padding: 1px;
+}
+.level:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+.level.selected {
+	background-color: #ccc;
+	border: 2px solid #000;
+	padding: 0;
+}
+.level .desc {
+	text-align: left;
+	margin: 10px;
 }
 
 .error {
