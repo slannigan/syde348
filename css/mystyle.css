@@ -151,3 +151,8 @@ p.score {
 .next {
 	right: 50px;
 }
+
+#c {
+	border: 1px solid #000;
+	margin-left: 50px;
+}
