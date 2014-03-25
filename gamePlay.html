@@ -12,7 +12,10 @@
 <div id="main" class="gameplay">
 	<progress id="progressBar" value="0" max="100"></progress>
 	<button type="button" id="pauseBtn">Pause</button>
-	<div id="container"></div>
+    <h3 style="color: #575757; float: left; font-size: 14px; font-family: Helvetica;">CLICK BELOW HERE TO START THE GAME</h3>   
+	<div id="container">
+        
+    </div>
 	<div id="dialog" title="Pause"></div>
 	<script defer="defer">
 function updateProgress(newValue) {
@@ -21,32 +24,20 @@ function updateProgress(newValue) {
 }
 
 function getRandomX() {
-    var numX = Math.floor(Math.random() * 6) + 1;
-    if (numX <= 2) {
-        return 10;
-    } else if ((num <= 4) && (numX > 2)) {
-        return 50;
-    } else {
-        return 100;
-    }
+    return (Math.round(Math.random()*109) + 501);
 }
 
 function getRandomY() {
-    var numY = Math.floor(Math.random() * 6) + 1;
-    if (numY <= 2) {
-        return 10;
-    } else if ((numY <= 4) && (numY > 2)) {
-        return 50;
-    } else {
-        return 100;
-    }
+    return (Math.round(Math.random()*205) + 81);
 }
-
+window.onload = function(){
     var stage = new Kinetic.Stage({
         container: 'container',
         width: 1000,
         height: 450
     });
+    
+
     var layer = new Kinetic.Layer();
 
     var mouseObj = new Image();
@@ -68,9 +59,10 @@ function getRandomY() {
             setTimeout(function() {
                 updateProgress(0.5);
                 mouse.opacity(1);
+                stage.draw();
             }, 1000);        
-            mouse.setX(90);
-            mouse.setY(10);
+            mouse.setX(getRandomX());
+            mouse.setY(getRandomY());
 
         }
     });
@@ -93,7 +85,7 @@ function getRandomY() {
     // bowl
     var bowlObj = new Image();
     var target = new Kinetic.Image({
-        x: 200,
+        x: 250,
         y: 330,
         width: 250,
         height: 120,
@@ -111,7 +103,7 @@ function getRandomY() {
     layer.add(mouse);
     layer.add(invisBox);
     stage.add(layer);
-
+};
 
 	</script>
 
