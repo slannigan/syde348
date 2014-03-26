@@ -1,12 +1,21 @@
 @import url('gameplay.css');
 @import url('jquery-ui-1.10.4.custom.min.css');
-
+html{
+	background: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 100%;
+	/*#1992da*/
+}
 body {
 	margin: 0;
 	padding: 0;
 }
-
+input{
+	height: 30px;
+	padding: 7px 5px;
+}
 #main {
+	background: #fff;
 	width: 800px;
 	height: 500px;
 	border: 1px solid #000;
@@ -113,6 +122,7 @@ p.score {
 }
 
 .button {
+	font-size: 14px;
 	display: inline-block;
 	padding: 5px 15px;
 	border: 1px solid #000;
