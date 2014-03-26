@@ -4,15 +4,29 @@ html{
 	background: #fff;
 	font-family: 'Raleway', sans-serif;
 	font-size: 100%;
+	color: #575757;
 	/*#1992da*/
 }
 body {
 	margin: 0;
 	padding: 0;
 }
-input{
-	height: 30px;
-	padding: 7px 5px;
+input[type=text] {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 7px 5px;
+  height: 30px;
+  border: 1px solid #575757;
+  font-family: 'Raleway', sans-serif;
+}
+ 
+input[type=text]:focus{
+  box-shadow: 0 0 5px #1992da;
+  padding: 7px 5px;
+  border: 1px solid #1992da;
 }
 #main {
 	background: #fff;
@@ -48,7 +62,7 @@ input{
 	margin-top: 150px;
 }
 .reward .title {
-	margin: 80px 0 30px 320px;
+	margin: 80px 0 30px 300px;
 }
 p.score {
 	font-size: 30px;
