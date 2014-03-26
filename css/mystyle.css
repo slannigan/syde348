@@ -151,10 +151,17 @@ p.score {
 .next {
 	right: 50px;
 }
+
 .instruction{
 	text-align: justify;
 	line-height: 18px;
 	font-size: 14px;
 	color: #575757;
 	margin: 20px 40px;
+}
+
+#c {
+	border: 1px solid #000;
+	margin-left: 50px;
+
 }
